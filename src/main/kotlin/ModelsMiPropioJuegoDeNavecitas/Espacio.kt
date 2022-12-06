@@ -272,6 +272,8 @@ class Espacio {
      * @param direccion la direccion en donde nos moveremos
      * @param desplazamiento la cantidad de casillas maximas que se podra mover la nave al avanzar
      */
+     //La razón por la que está función está aquí y no en la clase Enemigos, es porque al principio intente algo más complicado que requería colocarlo aquí
+     //Sin embargo, de la manera que termine planteando el ejercicio al final no era necesario colocarlo aquí
     fun desplazarEnemigos(matrizEspacio: Array<Array<String>> , luke: Luke){
         var contador = 0
         var vectorEnemigos: Array<Any?> = Array<Any?>(10){null}
@@ -354,6 +356,7 @@ class Espacio {
      * @param direccion la direccion en donde nos moveremos
      * @param desplazamiento la cantidad de casillas maximas que se podra mover la nave al avanzar
      */
+     //La razón por la que está función está aquí y no en la clase Luke, es la misma de porque el movimiento de los enemigos está en la clase Espacio
     fun desplazarLuke(matrizEspacio: Array<Array<String>>, espacio: Array<Array<Any?>>, direccion: String, desplazamiento: Int){
         var movimiento = desplazamiento
         var auxiliar = espacio
