@@ -69,7 +69,7 @@ fun main(){
                 espacio.mostrarEspacio(matrizEspacio)
                 println()
                 Thread.sleep(2_000L)
-            }while(espacio.navesAbatidas != 7 && espacio.luke.vida <= 0 && espacio.luke.combustible <= 0)
+            }while(espacio.navesAbatidas != 7 && espacio.luke.vida > 0 && espacio.luke.combustible > 0)
         }
         2 -> {
             vidaLuke = 15
@@ -122,7 +122,7 @@ fun main(){
                 espacio.mostrarEspacio(matrizEspacio)
                 println()
                 Thread.sleep(2_000L)
-            }while(espacio.navesAbatidas != 7 && espacio.luke.vida <= 0 && espacio.luke.combustible <= 0)
+            }while(espacio.navesAbatidas != 7 && espacio.luke.vida > 0 && espacio.luke.combustible > 0)
         }
         3 -> {
             vidaLuke = 10
@@ -176,7 +176,7 @@ fun main(){
                 espacio.mostrarEspacio(matrizEspacio)
                 println()
                 Thread.sleep(2_000L)
-            }while(espacio.navesAbatidas != 9 && espacio.luke.vida <= 0 && espacio.luke.combustible <= 0)
+            }while(espacio.navesAbatidas != 9 && espacio.luke.vida > 0 && espacio.luke.combustible > 0)
         }
     }
     println("Se termino el juego:")
