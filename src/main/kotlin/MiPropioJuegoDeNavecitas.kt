@@ -186,7 +186,7 @@ fun main(){
         if(espacio.luke.combustible <= 0){
             println("Te has quedado tirado por el espacio sin combustible, debiste haber agarrado más suministros de los asteroides(*)")
         }else{
-            println("Has acabado con todos los enemigos felicidades")
+            println("Has acabado con todos los enemigos, felicidades")
         }
     }
 }
