@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="140.0" prefWidth="338.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.saludaryguardar_kotlin.controllers.VentanaModalController">
+   <children>
+      <HBox alignment="CENTER" fillHeight="false" prefHeight="51.0" prefWidth="270.0" spacing="20.0" style="-fx-background-color: white;">
+         <children>
+            <Label prefHeight="55.0" prefWidth="102.0" text="Mi nombre es: Iván" />
+            <ImageView fitHeight="51.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icono.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label text="Por lo que puedo ver:" textFill="#0400ff">
+         <VBox.margin>
+            <Insets bottom="4.0" top="4.0" />
+         </VBox.margin></Label>
+      <Label fx:id="nombreModal" text="Tu nombre es:" textFill="#0400ff">
+         <VBox.margin>
+            <Insets bottom="4.0" top="4.0" />
+         </VBox.margin></Label>
+      <Label fx:id="edadModal" text="Tu edad es:" textFill="#0400ff">
+         <VBox.margin>
+            <Insets bottom="4.0" top="4.0" />
+         </VBox.margin></Label>
+      <Label fx:id="emailModal" text="Tu email es:" textFill="#0400ff">
+         <VBox.margin>
+            <Insets bottom="10.0" top="4.0" />
+         </VBox.margin></Label>
+   </children>
+</VBox>
